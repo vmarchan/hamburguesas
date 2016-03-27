@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hamburguesas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="el4-na-B8I" userLabel="BotonSiguiente">
+                                <rect key="frame" x="16" y="54" width="288" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="O5Y-pz-1tc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="¡Quiero una hamburguesa!"/>
+                                <connections>
+                                    <action selector="seleccionPaisHamburguesa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fB7-2Q-q38"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="País:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j05-6D-bBL" userLabel="CountryTitle">
+                                <rect key="frame" x="16" y="130" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="m3C-tA-oQb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfc-ft-AVn" userLabel="LineCountry">
+                                <rect key="frame" x="0.0" y="152" width="320" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="mpv-ax-G7R"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VfF-Kc-EiE" userLabel="NombrePais">
+                                <rect key="frame" x="12" y="165" width="296" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburguesa:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0p-mD-dSm" userLabel="BurguerTitle">
+                                <rect key="frame" x="16" y="220" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="a0I-Yb-701"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C5E-Nk-68c" userLabel="BurguerLine">
+                                <rect key="frame" x="0.0" y="243" width="320" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="vpl-MT-NKU"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jr-Cp-afp" userLabel="NombreHamburguesa">
+                                <rect key="frame" x="16" y="257" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cfc-ft-AVn" firstAttribute="top" secondItem="j05-6D-bBL" secondAttribute="bottom" constant="1" id="1gc-zG-K5p"/>
+                            <constraint firstItem="9jr-Cp-afp" firstAttribute="top" secondItem="C5E-Nk-68c" secondAttribute="bottom" constant="13" id="Aab-oW-P7H"/>
+                            <constraint firstItem="j05-6D-bBL" firstAttribute="top" secondItem="el4-na-B8I" secondAttribute="bottom" constant="46" id="FL8-Vi-kOF"/>
+                            <constraint firstItem="el4-na-B8I" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="34" id="FPG-5L-GYa"/>
+                            <constraint firstAttribute="trailing" secondItem="C5E-Nk-68c" secondAttribute="trailing" id="G9N-Vs-KYL"/>
+                            <constraint firstAttribute="trailing" secondItem="cfc-ft-AVn" secondAttribute="trailing" id="Gjb-Yy-nsp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="j05-6D-bBL" secondAttribute="trailing" id="Gqg-1C-WZO"/>
+                            <constraint firstItem="cfc-ft-AVn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="J9M-gu-e8V"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="q0p-mD-dSm" secondAttribute="leading" id="Jkf-42-YAB"/>
+                            <constraint firstItem="q0p-mD-dSm" firstAttribute="top" secondItem="VfF-Kc-EiE" secondAttribute="bottom" constant="35" id="Mb3-Vg-o0c"/>
+                            <constraint firstItem="C5E-Nk-68c" firstAttribute="top" secondItem="q0p-mD-dSm" secondAttribute="bottom" constant="2" id="R5d-NP-Xbr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VfF-Kc-EiE" secondAttribute="trailing" constant="-4" id="Sur-qr-Aih"/>
+                            <constraint firstItem="VfF-Kc-EiE" firstAttribute="top" secondItem="cfc-ft-AVn" secondAttribute="bottom" constant="12" id="TZp-MT-79J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q0p-mD-dSm" secondAttribute="trailing" id="VdH-BC-odw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="el4-na-B8I" secondAttribute="trailing" id="YC6-Zu-Mot"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="VfF-Kc-EiE" secondAttribute="leading" constant="4" id="dhB-1d-695"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9jr-Cp-afp" secondAttribute="trailing" constant="-4" id="fqr-89-CVL"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="el4-na-B8I" secondAttribute="leading" id="mCu-c8-A5e"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="9jr-Cp-afp" secondAttribute="leading" constant="4" id="rvj-cI-xEY"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="j05-6D-bBL" secondAttribute="leading" id="ti8-Lz-cRK"/>
+                            <constraint firstItem="C5E-Nk-68c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xy4-5d-cgk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hamburguesa" destination="9jr-Cp-afp" id="klZ-H7-nSo"/>
+                        <outlet property="pais" destination="VfF-Kc-EiE" id="ye8-F8-7as"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149" y="295"/>
+        </scene>
+    </scenes>
+</document>
